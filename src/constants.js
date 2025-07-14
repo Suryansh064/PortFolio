@@ -18,7 +18,7 @@ import postmanLogo from './assets/tech_logo/postman.png';
 import mcLogo from './assets/tech_logo/mc.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
-import expresslogo from './assets/tech_logo/Express.png';
+import expresslogo from './assets/tech_logo/express.png';
 // Education Section Logo's
 import nitLogo from './assets/education_logo/nit.png';
 import bsnvLogo from './assets/education_logo/bsnv.png';
