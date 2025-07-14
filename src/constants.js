@@ -18,7 +18,7 @@ import postmanLogo from './assets/tech_logo/postman.png';
 import mcLogo from './assets/tech_logo/mc.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
-
+import expresslogo from './assets/tech_logo/Express.png';
 // Education Section Logo's
 import nitLogo from './assets/education_logo/nit.png';
 import bsnvLogo from './assets/education_logo/bsnv.png';
@@ -27,7 +27,9 @@ import bsnvLogo from './assets/education_logo/bsnv.png';
 import githubdetLogo from './assets/work_logo/mortgage.png';
 import csprepLogo from './assets/work_logo/pokemon.png';
 import movierecLogo from './assets/work_logo/taskliist.png';
-
+import typinglogo from  './assets/work_logo/TypingArena.png'
+import merntasklogo from  './assets/work_logo/MernTask.png'
+import Chattylogo from  './assets/work_logo/SnippyChat.png'
 
 
 export const SkillsInfo = [
@@ -48,6 +50,7 @@ export const SkillsInfo = [
       { name: 'Node JS', logo: nodejsLogo },
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
+      { name: 'Express', logo: expresslogo },
     ],
   },
   {
@@ -81,7 +84,7 @@ export const SkillsInfo = [
       img: nitLogo,
       school: "NIT JAMSHEDPUR",
       date: "Aug-2023 - June 2026",
-      grade: "8.08 CGPA",
+      grade: "7.94 CGPA",
       desc: "I'm persuing  Master's degree (MCA) in Computer Applications from NIT JAMSHEDPUR.  I'm  gaining a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at NIT JAMSHEDPUR has been instrumental in shaping my technical abilities and professional growth.",
       degree: "Master of Computer Applications - MCA",
     },
@@ -126,4 +129,34 @@ export const SkillsInfo = [
       github: "https://github.com/Suryansh064/TaskList",
       webapp: "https://tasklistss.netlify.app/",
     },
+    {
+  id: 3,
+  title: "MERNTASK",
+  description:
+    "A full-stack To-Do List application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to create, edit, and delete tasks with a responsive UI powered by React and styled with Tailwind CSS. Backend APIs handle task CRUD operations and MongoDB stores the data persistently.",
+  image: merntasklogo,
+  tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+  github: "https://github.com/Suryansh064/MernTask",
+  webapp: "https://merntask-frontend.onrender.com",
+},
+  {
+  id: 4,
+  title: "SnippyChat",
+  description:
+    "A full-stack messaging and video calling application with real-time 1:1 encrypted chat using Stream API. Integrated Stream's chat and call SDKs for low-latency communication, secure session handling, and seamless video call features. Designed with Tailwind CSS for a fully responsive, mobile-friendly UI.",
+  image: Chattylogo,
+  tags: ["MERN", "Stream Chat", "Stream Call", "React.js", "Tailwind CSS"],
+  github: "https://github.com/Suryansh064/SnippyChat",
+  webapp: "https://snippychat-ohv0.onrender.com",
+},
+{
+  id: 5,
+  title: "TypingArena",
+  description:
+    "A real-time multiplayer typing game with live leaderboards and WPM tracking. Built using Socket.IO and React for smooth, low-latency room interactions, countdown timers, and synchronized typing challenges. Scaled to support 1,000+ sessions with MongoDB and designed to work seamlessly across devices with Tailwind CSS.",
+  image: typinglogo,
+  tags: ["MERN", "Socket.IO", "React.js", "MongoDB", "Tailwind CSS"],
+  github: "https://github.com/Suryansh064/TypingArena",
+  webapp: "https://typingarena.onrender.com", 
+},
   ];
