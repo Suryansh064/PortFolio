@@ -32,15 +32,25 @@ import merntasklogo from  './assets/work_logo/MernTask.png'
 import Chattylogo from  './assets/work_logo/SnippyChat.png'
 
 
+import pythonLogo from './assets/tech_logo/python.png';
+import nextjsLogo from './assets/tech_logo/nextdotjs.png';
+import dockerLogo from './assets/tech_logo/docker.png';
+import langchainLogo from './assets/tech_logo/langchain.png';
+import socketLogo from './assets/tech_logo/socketdotio.png';
+import daisyUILogo from './assets/tech_logo/daisyui.png';
+import intellijLogo from './assets/tech_logo/intellijidea.png';
+
 export const SkillsInfo = [
   {
     title: 'Frontend',
     skills: [
-      { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo },
+      { name: 'HTML5', logo: htmlLogo },
+      { name: 'CSS3', logo: cssLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'React JS', logo: reactjsLogo },
+      { name: 'Next.js', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
+      { name: 'DaisyUI', logo: daisyUILogo },
       { name: 'Bootstrap', logo: bootstrapLogo },
     ],
   },
@@ -48,9 +58,11 @@ export const SkillsInfo = [
     title: 'Backend',
     skills: [
       { name: 'Node JS', logo: nodejsLogo },
-      { name: 'MySQL', logo: mysqlLogo },
+      { name: 'Express JS', logo: expresslogo },
       { name: 'MongoDB', logo: mongodbLogo },
-      { name: 'Express', logo: expresslogo },
+      { name: 'MySQL', logo: mysqlLogo },
+      { name: 'Socket.IO', logo: socketLogo },
+      { name: 'LangChain', logo: langchainLogo },
     ],
   },
   {
@@ -59,23 +71,25 @@ export const SkillsInfo = [
       { name: 'C', logo: cLogo },
       { name: 'C++', logo: cppLogo },
       { name: 'Java', logo: javaLogo },
+      { name: 'Python (Basics)', logo: pythonLogo },
       { name: 'JavaScript', logo: javascriptLogo },
     ],
   },
   {
-    title: 'Tools',
+    title: 'Tools & Platforms',
     skills: [
       { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
+      { name: 'IntelliJ IDEA', logo: intellijLogo },
       { name: 'Postman', logo: postmanLogo },
       { name: 'Compass', logo: mcLogo },
+      { name: 'Docker', logo: dockerLogo },
       { name: 'Vercel', logo: vercelLogo },
       { name: 'Netlify', logo: netlifyLogo },
     ],
   },
 ];
-
  
   
   export const education = [
@@ -95,13 +109,44 @@ export const SkillsInfo = [
       date: "July 2020 - June 2023",
       grade: "65.8%",
       desc: "I completed my Bachelor's degree in Science (B.Sc.) from B.S.N.V College Affiliated from Lucknow University. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of Science and technology..",
-      degree: "Bachelor of Science - BSC (Physics,Chemistry,Math)",
+      degree: "Bachelor of Science - BSC (Physics,Math)",
     },
   ];
   
   export const projects = [
+        
+  {
+  id: 0,
+  title: "SnippyChat",
+  description:
+    "A full-stack messaging and video calling application with real-time 1:1 encrypted chat using Stream API. Integrated Stream's chat and call SDKs for low-latency communication, secure session handling, and seamless video call features. Designed with Tailwind CSS for a fully responsive, mobile-friendly UI.,integrated an AI Friend Chatbot using LangChain and RAG",
+  image: Chattylogo,
+  tags: ["MERN", "Stream Chat", "Stream Call", "React.js", "Tailwind CSS","LangChain","RAG"],
+  github: "https://github.com/Suryansh064/SnippyChat",
+  webapp: "https://snippychat-ohv0.onrender.com",
+},
+{
+  id: 1,
+  title: "TypingArena",
+  description:
+    "A real-time multiplayer typing game with live leaderboards and WPM tracking. Built using Socket.IO and React for smooth, low-latency room interactions, countdown timers, and synchronized typing challenges. Scaled to support 1,000+ sessions with MongoDB and designed to work seamlessly across devices with Tailwind CSS.",
+  image: typinglogo,
+  tags: ["MERN", "Socket.IO", "React.js", "MongoDB", "Tailwind CSS"],
+  github: "https://github.com/Suryansh064/TypingArena",
+  webapp: "https://typingarena.onrender.com", 
+},
+{
+  id: 2,
+  title: "MERNTASK",
+  description:
+    "A full-stack To-Do List application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to create, edit, and delete tasks with a responsive UI powered by React and styled with Tailwind CSS. Backend APIs handle task CRUD operations and MongoDB stores the data persistently.",
+  image: merntasklogo,
+  tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+  github: "https://github.com/Suryansh064/MernTask",
+  webapp: "https://merntask-frontend.onrender.com",
+},
     {
-      id: 0,
+      id: 3,
       title: "Mortgage Calculator",
       description:"Developed a mortgage calculator using React, Tailwind CSS, and useState for state management Implemented dynamic input handling and a formula to calculate monthly payments based on principal amount, interest rate, and loan duration. Enhanced UI/UX with Tailwind for responsive styling.",
       image: githubdetLogo,
@@ -110,7 +155,7 @@ export const SkillsInfo = [
       webapp: "https://mortagecal.netlify.app/",
     },
     {
-      id: 1,
+      id: 4,
       title: "Pokemon App",
       description:
         "Built a dynamic web app using React.js and PokeAPI to display Pokemon data with search, filtering,and responsive UI. Implemented state management with hooks and styled components for a smooth user experience",
@@ -120,7 +165,7 @@ export const SkillsInfo = [
       webapp: "https://pokemonapk.netlify.app/",
     },
     {
-      id: 2,
+      id: 5,
       title: "To Do List",
       description:
         "A To-Do List application built using React, incorporating hooks like useState for state management. Features include adding, editing, and deleting tasks with a responsive UI styled using Tailwind CSS. It allows users to add delete tasks with ease",
@@ -129,34 +174,5 @@ export const SkillsInfo = [
       github: "https://github.com/Suryansh064/TaskList",
       webapp: "https://tasklistss.netlify.app/",
     },
-    {
-  id: 3,
-  title: "MERNTASK",
-  description:
-    "A full-stack To-Do List application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to create, edit, and delete tasks with a responsive UI powered by React and styled with Tailwind CSS. Backend APIs handle task CRUD operations and MongoDB stores the data persistently.",
-  image: merntasklogo,
-  tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
-  github: "https://github.com/Suryansh064/MernTask",
-  webapp: "https://merntask-frontend.onrender.com",
-},
-  {
-  id: 4,
-  title: "SnippyChat",
-  description:
-    "A full-stack messaging and video calling application with real-time 1:1 encrypted chat using Stream API. Integrated Stream's chat and call SDKs for low-latency communication, secure session handling, and seamless video call features. Designed with Tailwind CSS for a fully responsive, mobile-friendly UI.",
-  image: Chattylogo,
-  tags: ["MERN", "Stream Chat", "Stream Call", "React.js", "Tailwind CSS"],
-  github: "https://github.com/Suryansh064/SnippyChat",
-  webapp: "https://snippychat-ohv0.onrender.com",
-},
-{
-  id: 5,
-  title: "TypingArena",
-  description:
-    "A real-time multiplayer typing game with live leaderboards and WPM tracking. Built using Socket.IO and React for smooth, low-latency room interactions, countdown timers, and synchronized typing challenges. Scaled to support 1,000+ sessions with MongoDB and designed to work seamlessly across devices with Tailwind CSS.",
-  image: typinglogo,
-  tags: ["MERN", "Socket.IO", "React.js", "MongoDB", "Tailwind CSS"],
-  github: "https://github.com/Suryansh064/TypingArena",
-  webapp: "https://typingarena.onrender.com", 
-},
+
   ];
