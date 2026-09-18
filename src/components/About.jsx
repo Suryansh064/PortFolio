@@ -11,14 +11,14 @@ const About = () => {
     >
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
+          {/* <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
             Hi, I am
-          </h1>
+          </h1> */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
             Suryansh Singh
           </h2>
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
-            <span className="text-white">I am a </span>
+            {/* <span className="text-white">I am a </span> */}
             <ReactTypingEffect
               text={[
                 'Coder',
@@ -35,7 +35,7 @@ const About = () => {
             />
           </h3>
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-I am a full-stack developer skilled in Java, Node.js, Express.js, React.js, MongoDB, and REST APIs. I also have hands-on experience with DevOps, cloud, and AI technologies.
+I am  full-stack developer skilled in Java, Node.js, Express.js, React.js, MongoDB, and REST APIs. I also have hands-on experience with DevOps, cloud, and AI technologies.
           </p>
           <a
             href="https://drive.google.com/file/d/1MkO-rUowuT5p7xC_NI_IHuP6JtMPQ0Pr/view?usp=drive_link"
