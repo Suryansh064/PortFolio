@@ -1,67 +1,76 @@
 import React from "react";
-import { education } from "../constants"; // Import the education data
+import { education } from "../constants";
 
 const Education = () => {
   return (
     <section
       id="education"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans "
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans"
     >
       {/* Section Title */}
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
+      <div className="text-center mb-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white">
+          EDUCATION
+        </h2>
+
+        <div className="w-24 h-1 bg-purple-500 mx-auto mt-2"></div>
+
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          My education has been a journey of learning and development. Here are the details of my academic background
+          My academic background and educational journey
         </p>
       </div>
 
-      {/* Education Timeline */}
-      <div className="relative">
-
-        {/* Education Entries */}
-        {education.map((edu, index) => (
+      {/* Education Cards */}
+      <div className="max-w-4xl mx-auto py-10 space-y-8">
+        {education.map((edu) => (
           <div
             key={edu.id}
-            className={`flex flex-col sm:flex-row items-center mb-16 ${
-              index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
-            }`}
+            className="bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8
+            rounded-2xl border border-white
+            shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]
+            hover:shadow-[0_0_25px_2px_rgba(130,69,236,0.45)]
+            transition-all duration-300"
           >
-            {/* Content Section */}
-            <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
-                index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
-            >
-              {/* Flex container for image and text */}
-              <div className="flex items-center space-x-8">
-                {/* School Logo/Image */}
-                <div className="w-24 h-16 bg-white rounded-md overflow-hidden">
-                  <img
-                    src={edu.img}
-                    alt={edu.school}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+            {/* Header */}
+            <div className="flex flex-col sm:flex-row items-center gap-6">
 
-                {/* Degree, School Name, and Date */}
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl sm:text-xl font-semibold text-white">
-                      {edu.degree}
-                    </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
-                      {edu.school}
-                    </h4>
-                  </div>
-                  {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{edu.date}</p>
-                </div>
+              {/* College Logo */}
+              <div className="w-24 h-20 bg-white rounded-lg overflow-hidden flex-shrink-0">
+                <img
+                  src={edu.img}
+                  alt={edu.school}
+                  className="w-full h-full object-contain"
+                />
               </div>
 
-              <p className="mt-4 text-gray-400 font-bold">Grade: {edu.grade}</p>
-              <p className="mt-4 text-gray-400">{edu.desc}</p>
+              {/* Education Details */}
+              <div className="text-center sm:text-left">
+                <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                  {edu.degree}
+                </h3>
+
+                <h4 className="text-purple-400 font-semibold mt-2">
+                  {edu.school}
+                </h4>
+
+                <p className="text-gray-500 text-sm mt-2">
+                  {edu.date}
+                </p>
+              </div>
             </div>
+
+            {/* Grade */}
+            <p className="mt-6 text-gray-300 font-semibold">
+              Grade:{" "}
+              <span className="text-purple-400">
+                {edu.grade}
+              </span>
+            </p>
+
+            {/* Description */}
+            <p className="mt-4 text-gray-400 text-sm sm:text-base leading-relaxed">
+              {edu.desc}
+            </p>
           </div>
         ))}
       </div>

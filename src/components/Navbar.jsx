@@ -30,6 +30,7 @@ const Navbar = () => {
 
   const menuItems = [
     { id: "about", label: "About" },
+    { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "work", label: "Projects" },
     { id: "education", label: "Education" },

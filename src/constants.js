@@ -40,6 +40,13 @@ import socketLogo from './assets/tech_logo/socketdotio.png';
 import daisyUILogo from './assets/tech_logo/daisyui.png';
 import intellijLogo from './assets/tech_logo/intellijidea.png';
 
+import helmLogo from './assets/tech_logo/helm.png';
+import jenkinsLogo from './assets/tech_logo/jenkins.png';
+import kubernetesLogo from './assets/tech_logo/kubernetes.png';
+import linuxLogo from './assets/tech_logo/linux.png';
+import liquibaseLogo from './assets/tech_logo/liquibase.png';
+import openshiftLogo from './assets/tech_logo/redhatopenshift.png';
+import awslogo from './assets/tech_logo/aws.png';
 export const SkillsInfo = [
   {
     title: 'Frontend',
@@ -71,7 +78,7 @@ export const SkillsInfo = [
       { name: 'C', logo: cLogo },
       { name: 'C++', logo: cppLogo },
       { name: 'Java', logo: javaLogo },
-      { name: 'Python (Basics)', logo: pythonLogo },
+      { name: 'Python', logo: pythonLogo },
       { name: 'JavaScript', logo: javascriptLogo },
     ],
   },
@@ -84,13 +91,26 @@ export const SkillsInfo = [
       { name: 'IntelliJ IDEA', logo: intellijLogo },
       { name: 'Postman', logo: postmanLogo },
       { name: 'Compass', logo: mcLogo },
-      { name: 'Docker', logo: dockerLogo },
       { name: 'Vercel', logo: vercelLogo },
       { name: 'Netlify', logo: netlifyLogo },
     ],
   },
+
+{
+  title: 'DevOps & Cloud',
+  skills: [
+    { name: 'Linux', logo: linuxLogo },
+    { name: 'Jenkins', logo: jenkinsLogo },
+    { name: 'CI/CD', logo: jenkinsLogo },
+    { name: 'Docker', logo: dockerLogo },
+    { name: 'Kubernetes', logo: kubernetesLogo },
+    { name: 'OpenShift', logo: openshiftLogo },
+    { name: 'Helm', logo: helmLogo },
+    { name: 'Liquibase', logo: liquibaseLogo },
+    { name: 'AWS', logo: awslogo },
+  ],
+}
 ];
- 
   
   export const education = [
     {
@@ -98,7 +118,7 @@ export const SkillsInfo = [
       img: nitLogo,
       school: "NIT JAMSHEDPUR",
       date: "Aug-2023 - June 2026",
-      grade: "7.94 CGPA",
+      grade: "8.03 CGPA",
       desc: "I'm persuing  Master's degree (MCA) in Computer Applications from NIT JAMSHEDPUR.  I'm  gaining a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at NIT JAMSHEDPUR has been instrumental in shaping my technical abilities and professional growth.",
       degree: "Master of Computer Applications - MCA",
     },
@@ -107,7 +127,7 @@ export const SkillsInfo = [
       img: bsnvLogo,
       school: "B.S.N.V PG COLLEGE, LUCKNOW ,UP ",
       date: "July 2020 - June 2023",
-      grade: "65.8%",
+      grade : "",
       desc: "I completed my Bachelor's degree in Science (B.Sc.) from B.S.N.V College Affiliated from Lucknow University. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of Science and technology..",
       degree: "Bachelor of Science - BSC (Physics,Math)",
     },
@@ -115,8 +135,18 @@ export const SkillsInfo = [
   
   export const projects = [
         
-  {
+{
   id: 0,
+  title: "TypingArena",
+  description:
+    "A real-time multiplayer typing game with live leaderboards and WPM tracking. Built using Socket.IO and React for smooth, low-latency room interactions, countdown timers, and synchronized typing challenges. Scaled to support 1,000+ sessions with MongoDB and designed to work seamlessly across devices with Tailwind CSS.",
+  image: typinglogo,
+  tags: ["MERN", "Socket.IO", "React.js", "MongoDB", "Tailwind CSS"],
+  github: "https://github.com/Suryansh064/TypingArena",
+  webapp: "https://typing-arena-seven.vercel.app/", 
+},
+  {
+  id: 1,
   title: "SnippyChat",
   description:
     "A full-stack messaging and video calling application with real-time 1:1 encrypted chat using Stream API. Integrated Stream's chat and call SDKs for low-latency communication, secure session handling, and seamless video call features. Designed with Tailwind CSS for a fully responsive, mobile-friendly UI.,integrated an AI Friend Chatbot using LangChain and RAG",
@@ -124,16 +154,6 @@ export const SkillsInfo = [
   tags: ["MERN", "Stream Chat", "Stream Call", "React.js", "Tailwind CSS","LangChain","RAG"],
   github: "https://github.com/Suryansh064/SnippyChat",
   webapp: "https://snippychat-ohv0.onrender.com",
-},
-{
-  id: 1,
-  title: "TypingArena",
-  description:
-    "A real-time multiplayer typing game with live leaderboards and WPM tracking. Built using Socket.IO and React for smooth, low-latency room interactions, countdown timers, and synchronized typing challenges. Scaled to support 1,000+ sessions with MongoDB and designed to work seamlessly across devices with Tailwind CSS.",
-  image: typinglogo,
-  tags: ["MERN", "Socket.IO", "React.js", "MongoDB", "Tailwind CSS"],
-  github: "https://github.com/Suryansh064/TypingArena",
-  webapp: "https://typingarena.onrender.com", 
 },
 {
   id: 2,
